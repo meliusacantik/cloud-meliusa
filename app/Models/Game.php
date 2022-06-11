@@ -26,6 +26,6 @@ class Game extends Model
     }
 
     public function credit(){
-        return $this->hasMany(Credit::class, 'id', 'game_id');
+        return $this->hasMany(Credit::class, 'game_id', 'id');
     }
 }
